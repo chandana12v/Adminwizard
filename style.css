@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #f7f7f7;
+}
+.cont-pt {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.box {
+  width: 100%;
+  height: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.admin {
+  color: #222;
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+}
+.admin:hover {
+  color: #222;
+}
+.breadcrumb {
+  background: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0px;
+  margin-top: 20px;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: #707c96;
+}
+.breadcrumb li.active {
+  text-decoration: none;
+  color: #6889ed;
+  font-weight: 700;
+}
+.breadcrumb > li + li:before {
+  color: #cccccc;
+  content: ">" !important;
+  padding: 0 5px;
+  font-size: 14px;
+}
+.breadcrumb-item {
+  display: -ms-flexbox;
+  display: flex;
+  color: #707c96;
+}
+
+.nav-pills .nav-link {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.nav-pills-custom .nav-link {
+  color: #aaa;
+  background: #fff;
+  position: relative;
+  padding: 0.5rem 1.5rem;
+}
+.flex-column i{
+    font-size: 18px;
+}
+.nav-pills-custom .nav-link.active {
+  color: #fff;
+  background: #2b47cc;
+}
+#Content{
+    border-bottom: 3.5px solid #46aaf9;
+}
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+    content: "";
+    display: block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #2b47cc;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
+.tabbable-panel {
+  padding: 10px;
+}
+.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin-right: 50px;
+  letter-spacing: .5px;
+  padding-bottom: 12px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  text-decoration: none;
+  border: 0;
+  margin-right: 0px;
+  color: #737373;
+  font-size: 20px;
+  font-weight: 600;
+}
+.tabbable-line > .nav-tabs > li:hover {
+  text-decoration: none;
+  border-bottom: 3px solid #46aaf9;
+}
+.tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 3px solid #46aaf9;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active a{
+    color: #46aaf9;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 25px 0;
+}
+

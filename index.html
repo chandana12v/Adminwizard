@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.7.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <div class="container-fluid cont-pt">
+        <div class="d-flex justify-content-between">
+            <div>
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand admin" href="#">Administration</a>
+                </nav>
+            </div>
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#"> <span><i class="fa fa-home"></i></span>
+                                Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">List</a></li>
+                        <li class="breadcrumb-item active">Wizards</li>
+                    </ol>
+                </nav>
+            </div>
+
+        </div>
+        <hr class='shadow'>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <!-- Tabs nav -->
+                <div class="nav flex-column nav-pills nav-pills-custom">
+                    <a class="nav-link mb-3 shadow active" id="gen-tab" data-toggle="pill"
+                        href="#general">
+                        <i class="fa fa-phone mr-2"></i>
+                        <span class="font-weight-bold  text-uppercase">General Inquiries</span></a>
+
+                    <a class="nav-link mb-3 shadow" id="features-tab" data-toggle="pill" href="#features">
+                        <i class="fa fa-diamond mr-2"></i>
+                        <span class="font-weight-bold  text-uppercase">Gleek Features</span></a>
+
+                    <a class="nav-link mb-3 shadow" id="privacy-tab" data-toggle="pill"
+                        href="#privacy">
+                        <i class="fa fa-lock mr-2"></i>
+                        <span class="font-weight-bold  text-uppercase">Permissions & Privacy</span></a>
+
+                    <a class="nav-link mb-3 shadow" id="plans-tab" data-toggle="pill"
+                        href="#plans">
+                        <i class="fa fa-star mr-2"></i>
+                        <span class="font-weight-bold  text-uppercase">Pricing & Plans</span></a>
+
+                    <a class="nav-link mb-3 shadow" id="gleek-tab" data-toggle="pill"
+                        href="#gleek">
+                        <i class="fa fa-globe mr-2"></i>
+                        <span class="font-weight-bold  text-uppercase">Gleek Enterprises</span></a>
+                </div>
+            </div>
+
+
+            <div class="col-md-9">
+                <!-- Tabs content -->
+                <div class="tab-content" id="Content">
+                    <div class="tab-pane fade shadow rounded bg-white show active p-4" id="general" role="tabpanel"
+                        aria-labelledby="gen-tab">
+                        <div class="tabbable-panel">
+                            <div class="tabbable-line">
+                                <ul class="nav nav-tabs ">
+                                    <li class="active">
+                                        <a href="#tab1" data-toggle="tab">
+                                        Home </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab2" data-toggle="tab">
+                                        Profile </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab3" data-toggle="tab">
+                                        Message </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab4" data-toggle="tab">
+                                        Settings </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab5" data-toggle="tab">
+                                        Address </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab6" data-toggle="tab">
+                                        Others </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content main-content">
+                                    <div class="tab-pane active" id="tab1">
+                                        <form>
+                                            <div class="form-group">
+                                              <label for="formGroupExampleInput">Example label</label>
+                                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="formGroupExampleInput2">Another label</label>
+                                              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                            </div>
+                                          </form>
+                                    </div>
+                                    <div class="tab-pane" id="tab2">
+                                        <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum.</p>
+                                    </div>
+                                    <div class="tab-pane" id="tab3">
+                                        <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="features" role="tabpanel"
+                        aria-labelledby="features-tab">
+                        <h4 class="font-italic mb-4">Features</h4>
+                        <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.</p>
+                    </div>
+
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="privacy" role="tabpanel"
+                        aria-labelledby="privacy-tab">
+                        <h4 class="font-italic mb-4">Privacy</h4>
+                        <p class="text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.</p>
+                    </div>
+
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="plans" role="tabpanel"
+                        aria-labelledby="plans-tab">
+                        <h4 class="font-italic mb-4">Plans</h4>
+                        <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.</p>
+                    </div>
+
+                    <div class="tab-pane fade shadow rounded bg-white p-5" id="gleek" role="tabpanel"
+                        aria-labelledby="gleek-tab">
+                        <h4 class="font-italic mb-4">Enterprises</h4>
+                        <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.main-content .tab-pane').each(function(idx,ele){
+                $(ele).on('click',function(){
+                    $(this).addClass('active');
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
