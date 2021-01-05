@@ -71,8 +71,8 @@
 
             <div class="col-md-9">
                 <!-- Tabs content -->
-                <div class="tab-content" id="Content">
-                    <div class="tab-pane fade shadow rounded bg-white show active p-4" id="general" role="tabpanel"
+                <div class="tab-content shadow" id="Content">
+                    <div class="tab-pane fade  rounded bg-white show active p-4" id="general" role="tabpanel"
                         aria-labelledby="gen-tab">
                         <div class="tabbable-panel">
                             <div class="tabbable-line">
@@ -104,16 +104,37 @@
                                 </ul>
                                 <div class="tab-content main-content">
                                     <div class="tab-pane active" id="tab1">
-                                        <form>
+                                        <form action="" id='detailsForm'>
+                                            <!--  General -->
                                             <div class="form-group">
-                                              <label for="formGroupExampleInput">Example label</label>
-                                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-                                            </div>
-                                            <div class="form-group">
-                                              <label for="formGroupExampleInput2">Another label</label>
-                                              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                              <div class="controls">
+                                                <input type="text" id="orgName" class="floatLabel">
+                                                <label for="Orgname">Organization Name</label>
+                                              </div>
+                                              <div class="controls">
+                                                <input type="text" id="pName" class="floatLabel">
+                                                <label for="parentOrg">Parent Organization</label>
+                                              </div>
+                                            <!--  Details -->
+                                              <div class="controls">
+                                                <i class="fa fa-sort"></i>
+                                                <select class="floatLabel" id='orgType'>
+                                                  <option value=""></option>
+                                                  <option value="small scale">Small Scale</option>
+                                                  <option value="medium scale">Medium Scale</option>
+                                                </select>
+                                                <label for="Type">Organization Type</label>
+                                              </div>
+                                              <div class="controls">
+                                                <input type="text" id="OrgTier" class="floatLabel mb-0">
+                                                <label for="tier">Organization Tier</label>
+                                              </div>
                                             </div>
                                           </form>
+                                          <div class="col-12 text-right pr-0">
+                                              <input type='submit' value='Submit' class='submit'>
+                                              <input type='button' value='Cancel' class='cancel'>
+                                          </div>
                                     </div>
                                     <div class="tab-pane" id="tab2">
                                         <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -122,18 +143,47 @@
                                             irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                             anim id est laborum.</p>
+                                            <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                anim id est laborum.</p>
                                     </div>
                                     <div class="tab-pane" id="tab3">
                                         <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            </p>
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum.</p>
+                                            <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                anim id est laborum.</p>
+                                    </div>
+                                    <div class="tab-pane" id="tab4">
+                                        <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum.</p>
+                                            <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                                anim id est laborum.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="features" role="tabpanel"
+                    <div class="tab-pane fade rounded p-5" id="features" role="tabpanel"
                         aria-labelledby="features-tab">
                         <h4 class="font-italic mb-4">Features</h4>
                         <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -144,7 +194,7 @@
                             anim id est laborum.</p>
                     </div>
 
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="privacy" role="tabpanel"
+                    <div class="tab-pane fade rounded  p-5" id="privacy" role="tabpanel"
                         aria-labelledby="privacy-tab">
                         <h4 class="font-italic mb-4">Privacy</h4>
                         <p class="text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -155,7 +205,7 @@
                             anim id est laborum.</p>
                     </div>
 
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="plans" role="tabpanel"
+                    <div class="tab-pane fade  rounded  p-5" id="plans" role="tabpanel"
                         aria-labelledby="plans-tab">
                         <h4 class="font-italic mb-4">Plans</h4>
                         <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -166,7 +216,7 @@
                             anim id est laborum.</p>
                     </div>
 
-                    <div class="tab-pane fade shadow rounded bg-white p-5" id="gleek" role="tabpanel"
+                    <div class="tab-pane fade  rounded p-5" id="gleek" role="tabpanel"
                         aria-labelledby="gleek-tab">
                         <h4 class="font-italic mb-4">Enterprises</h4>
                         <p class=" text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -184,16 +234,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $('.main-content .tab-pane').each(function(idx,ele){
-                $(ele).on('click',function(){
-                    $(this).addClass('active');
-                })
-            })
-        })
-    </script>
+    <script src='file.js'></script>
+   
 </body>
 
 </html>
