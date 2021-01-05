@@ -24,5 +24,10 @@
         $('#orgType').val('');
         $('#OrgTier').val('');
         $('.controls label.active').css({'top':'12px','color':'#999'})
-    })
+    });
+
+    $('.tab-item').click(function(){
+        $('.nav-tabs').children("li").removeClass("active");
+        $(this).addClass("active")
+    });
 })(jQuery);
